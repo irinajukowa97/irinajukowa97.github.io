@@ -11,20 +11,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
+  
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -92,20 +79,48 @@
     <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
+ <div class="container">
     <div class="section">
 
       <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
+        <form class="col s12">
+            <div class="col s12 center">
+                <h4 class="mdi-content-send brown-text">Свяжись с нами</h4>
+              </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">Имя</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Фамилия</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+              <label for="textarea1">Текст письма</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <a href="#" class="btn-large waves-effect waves-light teal lighten-1">Отправить письмо</a>
+            </div>
+          </div>
+        </form>
       </div>
 
     </div>
   </div>
-
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
